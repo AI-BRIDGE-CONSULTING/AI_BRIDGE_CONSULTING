@@ -1,0 +1,43 @@
+.header{
+    width: 900px;
+    height: 300px;
+    
+    h4{
+        color: #6e6e6e;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/static/Inter_18pt-ExtraBold.ttf') format('woff2'),
+       url('../fonts/Inter/static/Inter_18pt-ExtraBold.ttf') format('woff');
+//   font-weight: 700;
+  font-weight: 700;
+  font-style: normal;
+}
+.headerText{
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 72px;
+    line-height: 1.1;
+    font-weight: 1000;
+}
+
+.headerText span{
+    margin-bottom: 0px; /* zmniejsz do 4px jeśli chcesz ciaśniej */
+    font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+    margin: 0;
+    padding: 0;
+    color: #5f4888;
+    text-shadow: 
+    //3737ac -> niebieski
+    // // 0 0 30px #544475,
+    0 0 40px #5f4888
+    ;
+    // box-shadow: 0 0 30px #7146ad;
+
+
+}

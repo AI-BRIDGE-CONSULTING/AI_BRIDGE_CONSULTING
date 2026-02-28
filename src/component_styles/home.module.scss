@@ -1,0 +1,28 @@
+.firstPage {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,
+            #0F1721 0%,
+            #372c44 40%,
+            #372c44 50%,
+            #372c44 60%,
+            #0F1721 100%);
+}
+
+// .section {
+//     height: 100vh;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 3em;
+//     color: white;
+//     scroll-snap-align: start;
+//     transition: background-color 0.5s;
+// }
