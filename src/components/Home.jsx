@@ -15,7 +15,7 @@ export default function Home() {
     sections[0].scrollIntoView({ behavior: "smooth" });
 
     buttonRef.current.onclick = () =>{
-      sections[2].scrollIntoView({behavior: 'smooth'})
+      scrollToSection(2)
     }
     function scrollToSection(index) {
       // if(!firstScroll.current) return
