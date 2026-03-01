@@ -1,3 +1,6 @@
+*{
+    font-family: 'Inter';
+}
 .firstPage {
     position: relative;
     top: 0;
@@ -14,6 +17,16 @@
             #372c44 60%,
             #0F1721 100%);
 }
+.buttonBook{
+    position: relative;
+    top: .8rem;
+    scale: 1.5;
+    outline: none;
+}
+// .buttonBook:focus{
+//      outline: none;
+// }
+
 
 // .section {
 //     height: 100vh;

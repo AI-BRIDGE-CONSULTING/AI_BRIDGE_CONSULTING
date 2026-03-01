@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../component_styles/header.module.scss"
 import { motion } from "framer-motion";
-    export default function Header(){
+    export default function Header({children}){
         return (
             <>
                 <motion.div
@@ -16,6 +16,7 @@ import { motion } from "framer-motion";
     >
                     <h1 className={styles.headerText}>Twój most do świata <span>sztucznej inteligencji.</span></h1>
                     <h4>Odkryj świat sztucznej inteligencji. Dzięki nam rozwiniesz swoją firmę o AI</h4>
+                    {children}
                 </motion.div>
             </>
         )

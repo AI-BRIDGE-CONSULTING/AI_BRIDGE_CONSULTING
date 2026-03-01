@@ -1,7 +1,10 @@
 .header{
     width: 900px;
     height: 300px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     h4{
         color: #6e6e6e;
         text-align: center;
