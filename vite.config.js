@@ -1,18 +1,23 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { setTarget } from 'framer-motion'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+
 export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/contact': {
-        changeOrigin: true,
-        target: 'http://localhost:3000',
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      }
       
-    }
-  }
-})
+      '/contact': {
+        target: 'https://aibridgebackend-production.up.railway.app',
+        changeOrigin: true,
+        secure: true, 
+      },
+      '/api': {
+        target: 'https://aibridgebackend-production.up.railway.app',
+        changeOrigin: true,
+        secure: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
+});
