@@ -1,11 +1,134 @@
-.formContent{
+.formContent {
     width: 100vw;
     height: 100vh;
 
+    .headerForm {
+        position: relative;
+        top: 2.5rem;
+        font-size: 2.5em;
+        text-align: center;
+    }
 }
-.headerForm{
+
+
+
+.formContainer {
     position: relative;
-    top: 5rem;
-    font-size: 2em;
-    text-align: center;
+    background-color: #1F252C;
+    width: 80vw;
+    min-height: 500px;
+    height: fit-content;
+    max-width: 600px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .7rem;
+
+    h2 {
+        position: relative;
+        top: 1.5rem;
+        font-size: 1.7em;
+        left: 2.5rem;
+    }
+
+    h5 {
+        position: relative;
+        top: 2rem;
+        left: 2.5rem;
+        color: #797C80;
+    }
+
+    form {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        top: 3rem;
+        left: 2.5rem;
+        width: calc(100% - 5rem);
+
+        label {
+            color: #797C80;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+            padding: .7rem;
+            font-size: .7rem;
+            border-radius: .4rem;
+            border: #797C80;
+            background-color: #0F1721;
+            width: 100%;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus,
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 10px #dbdbdb;
+        }
+        textarea{
+            resize: vertical;
+        }
+        
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23797C80' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.2rem;
+            padding-right: 2.5rem;
+            color: #797C80;
+
+            option {
+                color: #8d8d8d;
+                border-radius: .7rem;
+                background-color: #0F1721;
+            }
+            
+        }
+        .freePackage{
+            background-color: gray;
+            color: #000000;
+        }
+        
+        .platinePackage{
+            background-color: #DFDDDB;
+            // color: #000000;
+            color: #000000;
+        }
+        .diamondPackage{
+            background-color: #00a5ce;
+            color: #000000;
+        }
+        hr{
+            position: relative;
+            top: .7rem;
+            left: 5%;
+            border: none;
+            border-top: 1px solid #797C80;
+            width: 90%;
+        }
+        button{
+            position: relative;
+            top: 2rem;
+            width: 150px;
+            left: calc(50% - 75px);
+            background-color: #2e3033;
+        }
+
+    }
+
+
+}
+.error{
+    font-size: small;
+    font-family: Helvetica;
+    font-style: italic;
+    color: red;
 }

@@ -1,9 +1,9 @@
 
-import notFound from "../component_styles/notFound.module.scss"
+import styles from "../component_styles/notFound.module.scss"
 export default function NotFound(){
     return(
         <>
-        <h1>Not Found</h1>
+        <h1 className={styles.NotFound}>Error 404: Not Found</h1>
         </>
     )
 }

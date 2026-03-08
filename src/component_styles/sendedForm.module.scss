@@ -1,0 +1,26 @@
+.SendedFormMessConainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg,
+            #0F1721 0%,
+            #372c44 40%,
+            #372c44 50%,
+            #372c44 60%,
+            #0F1721 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    h3{
+        color: #6e6e6e;
+    }
+    button{
+        position: relative;
+        top: 1rem;
+    }
+}

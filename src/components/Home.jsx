@@ -4,8 +4,17 @@ import Header from "./Header.jsx";
 import Form from "./Form.jsx";
 import MainContent from "./MainContent.jsx";
 import { motion } from "framer-motion";
+import gsap from "gsap";
 
-export default function Home() {
+export default function Home({isSended}) {
+  useEffect(()=>{
+    gsap.to(
+       document.body,
+        {overflowY: "auto", duration: 0}
+    )
+  })
+  console.log(isSended)
+  
   const current = useRef(0);
   const isScrolling = useRef(false);
   const firstScroll = useRef(true);
@@ -93,7 +102,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.7 }}
           >
-            <Form/>
+            <Form isSended={isSended}/>
           </motion.div>
         </div>
       </div>
