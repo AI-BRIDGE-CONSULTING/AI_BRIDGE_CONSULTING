@@ -37,7 +37,8 @@ const navigate = useNavigate();
   }
   function SendSuccess(){
   setIsSended(true)
- navigate('/Send');  
+  navigate('/Send');  
+  console.log("Wysłano")
 }
 function LimitReached(){
   errorRef.current.textContent = "Wysłałeś za dużo wiadomości, spróbuj ponownie później"
