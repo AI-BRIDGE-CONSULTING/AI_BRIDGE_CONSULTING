@@ -7,8 +7,8 @@ export default function MainContent() {
         <div className={styles.headings}>
           <h2>DLACZEGO AI JEST TAK ISTOTNE</h2>
           <h4>
-            AI stało się juz codziennością naszego zycia. Oto kilka powodów dla
-            których powinieneś zacząć go uzywać
+            AI stało się juz codziennością naszego życia. Oto kilka powodów dla
+            których powinieneś zacząć go używać
           </h4>
         </div>
         <div className={styles.reasons}>

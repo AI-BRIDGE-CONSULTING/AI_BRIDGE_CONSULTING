@@ -240,7 +240,7 @@ function LimitReached(){
     }
     if(otherInfo === "") otherInfo = "brak"
     try {
-      const response = await fetch("https://www.aibridgeconsulting.pl", {
+      const response = await fetch("https://www.api.aibridgeconsulting.pl", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
