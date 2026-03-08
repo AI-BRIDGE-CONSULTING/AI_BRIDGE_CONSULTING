@@ -6,10 +6,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/contact': {
-        target: 'https://aibridgebackend-production.up.railway.app',
-        changeOrigin: true,
-        secure: true,
-      },
+  target: 'https://aibridgebackend-production.up.railway.app',
+  changeOrigin: true,
+  secure: true
+},
       
       '/api': {
         target: 'https://aibridgebackend-production.up.railway.app',
