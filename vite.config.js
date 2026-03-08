@@ -6,16 +6,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/contact': {
-  target: 'https://aibridgebackend-production.up.railway.app',
-  changeOrigin: true,
-  secure: true
-},
-      
-      '/api': {
-        target: 'https://aibridgebackend-production.up.railway.app',
+        target: 'https://api.aibridgeconsulting.pl', // Twój backend
         changeOrigin: true,
         secure: true,
-        rewrite: (path) => path.replace(/^\/api/, ''), // usuwa /api z początku
       },
     },
   },
