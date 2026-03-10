@@ -35,6 +35,14 @@ const navigate = useNavigate();
       return false;
     }
   }
+  function isOtherInfoValide(otherInfo){
+    if(otherInfo.value.length < 15000){
+      return true;
+    }else{
+      return false;
+    }
+
+  }
   function SendSuccess(){
   setIsSended(true)
   navigate('/Send');  
@@ -191,9 +199,12 @@ function LimitReached(){
         {boxShadow: "0 0 10px 3px #dbdbdb", duration: 0})
     }
     const handleOtherInfoBlur = () =>{
-      if(isEmailValide(otherInfoRef.current)) {
+      if(isOtherInfoValide(otherInfoRef.current)) {
         gsap.to(otherInfoRef.current,   
           {boxShadow: "0 0 10px #000"})
+      }else{
+        gsap.to(otherInfoRef.current,   
+          {boxShadow: "0 0 10px #d63232"})
       }
     }
    
@@ -202,9 +213,7 @@ function LimitReached(){
       otherInfoRef.current.addEventListener("focus", handleOtherInfoFocus);
       otherInfoRef.current.addEventListener("blur", handleOtherInfoBlur);
     }
-    if(otherInfoRef.current){
-      otherInfoRef.current.addEventListener("focus", handleOtherInfoFocus);
-    }
+    
 
     return () => {
       if(otherInfoRef.current){
