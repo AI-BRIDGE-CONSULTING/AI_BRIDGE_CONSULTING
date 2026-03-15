@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/contact': {
-        target: 'https://api.aibridgeconsulting.pl', // Twój backend
+        target: 'https://api.aibridgeconsulting.pl', 
         changeOrigin: true,
         secure: true,
       },

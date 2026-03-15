@@ -22,7 +22,8 @@
         position: relative;
         top: 10vh;
         h2{
-            font-size: 40px;
+            text-align: center;
+            font-size: 36px;
         }
         h4{
             color: #989898;
@@ -110,3 +111,70 @@
             }
         }
     }
+@media screen and (max-width: 1800px) {
+    .mainContent{
+        height: 125vh;
+    }
+    .reasons{
+        left: 2.5%;
+        width: 95%;
+        height: 55vh;
+        top: calc(15vh + .5rem);
+    }
+    .reasonBox{
+        margin: .7rem;
+        min-width: 400px ;
+    }
+    h2{
+        top: 1.5rem;
+    }
+    p{
+        top: .6rem;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .mainContent{
+        height: 150vh;
+    }
+    .reasons{
+        justify-content: center !important;
+        // align-items: center !important;
+    }
+    .boxHeader{
+        display: flex;
+        justify-content: center !important;
+        align-items: flex-start ;
+
+        h2{
+            margin-left: .7rem;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            font-size: 1.25em !important;
+        }
+        h4{
+            text-align: center;
+        }
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .reasonBox{
+        scale: .7;
+    }
+    .reasons{
+        
+        height: 35vh;
+    }
+    
+    
+}
+@media screen and (max-width: 1000px) {
+    .mainContent{
+        min-height: 200vh;
+        .reasons{
+            top: 12vh;
+        }
+    }
+}
