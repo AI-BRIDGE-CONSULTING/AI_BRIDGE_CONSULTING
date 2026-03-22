@@ -6,14 +6,14 @@ import MainContent from "./MainContent.jsx";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 
-export default function Home({isSended}) {
+export default function Home({isSended, isMobile}) {
   useEffect(()=>{
     gsap.to(
        document.body,
         {overflowY: "auto", duration: 0}
     )
   })
-  console.log(isSended)
+  console.log(isMobile)
   
   const current = useRef(0);
   const isScrolling = useRef(false);
@@ -100,7 +100,7 @@ export default function Home({isSended}) {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.4 }}
           >
             <Form isSended={isSended}/>
           </motion.div>

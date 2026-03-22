@@ -28,10 +28,12 @@ export default function MainContent() {
             </p>
           </div>
           <div className={styles.reasonBox}>
-            <div className={`${styles.imgContainer} ${styles.growth}`}>
-              <img src="/icons/growth.svg" alt="growth" />
+            <div className={styles.boxHeader}>
+              <div className={`${styles.imgContainer} ${styles.growth}`}>
+                <img src="/icons/growth.svg" alt="growth" />
+              </div>
+              <h2>Szybszy rozwój</h2>
             </div>
-            <h2>Szybszy rozwój</h2>
             <p>
               Sztuczna inteligencja pomaga szybciej analizować rynek, testować
               pomysły i podejmować decyzje w oparciu o dane. Możesz szybciej
@@ -40,10 +42,12 @@ export default function MainContent() {
             </p>
           </div>
           <div className={styles.reasonBox}>
-            <div className={`${styles.imgContainer} ${styles.support}`}>
-              <img src="/icons/support.svg" alt="support" />
+            <div className={styles.boxHeader}>
+              <div className={`${styles.imgContainer} ${styles.support}`}>
+                <img src="/icons/support.svg" alt="support" />
+              </div>
+              <h2>Wsparcie 24/7 dla użytkowników</h2>
             </div>
-            <h2>Wsparcie 24/7 dla użytkowników</h2>
             <p>
               Narzędzia oparte na AI działają bez przerwy — mogą obsługiwać
               klientów, generować raporty czy monitorować procesy nawet w nocy.
@@ -53,10 +57,12 @@ export default function MainContent() {
             </p>
           </div>
           <div className={styles.reasonBox}>
-            <div className={`${styles.imgContainer} ${styles.dolar}`}>
-              <img src="/icons/dolar.svg" alt="dolar" />
+            <div className={styles.boxHeader}>
+              <div className={`${styles.imgContainer} ${styles.dolar}`}>
+                <img src="/icons/dolar.svg" alt="dolar" />
+              </div>
+              <h2>Opłacalność od pierwszego dnia</h2>
             </div>
-            <h2>Opłacalność od pierwszego dnia</h2>
             <p>
               AI obniża koszty operacyjne, ograniczając potrzebę ręcznej pracy
               przy wielu procesach. Jednocześnie pomaga zwiększać sprzedaż
@@ -65,10 +71,12 @@ export default function MainContent() {
             </p>
           </div>
           <div className={styles.reasonBox}>
-            <div className={`${styles.imgContainer} ${styles.community}`}>
-              <img src="/icons/team.svg" alt="team" />
+            <div className={styles.boxHeader}>
+              <div className={`${styles.imgContainer} ${styles.community}`}>
+                <img src="/icons/team.svg" alt="team" />
+              </div>
+              <h2>Prostota użycia dla każdego zespołu</h2>
             </div>
-            <h2>Prostota użycia dla każdego zespołu</h2>
             <p>
               Nowoczesne narzędzia AI są intuicyjne i nie wymagają zaawansowanej
               wiedzy technicznej. Marketing, sprzedaż, HR czy obsługa klienta
@@ -77,15 +85,17 @@ export default function MainContent() {
             </p>
           </div>
           <div className={styles.reasonBox}>
-            <div className={`${styles.imgContainer} ${styles.lightning}`}>
-              <img src="icons/lightning.svg" alt="lightning" />
-            </div>
+            <div className={styles.boxHeader}>
+              <div className={`${styles.imgContainer} ${styles.lightning}`}>
+                <img src="icons/lightning.svg" alt="lightning" />
+              </div>
 
-            {/* LOKALNIE --> do wszystkich img 
+              {/* LOKALNIE --> do wszystkich img 
              <div className={`${styles.imgContainer} ${styles.lightning}`}>
               <img src="../../public/icons/lightning.svg" alt="lightning" />
             </div> */}
-            <h2>Szybkość implementacji</h2>
+              <h2>Szybkość implementacji</h2>
+            </div>
             <p>
               Wiele rozwiązań AI działa w modelu SaaS i można je uruchomić w
               ciągu kilku godzin lub dni. Nie potrzeba długich wdrożeń ani

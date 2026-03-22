@@ -22,7 +22,9 @@
         position: relative;
         top: 10vh;
         h2{
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
             font-size: 36px;
         }
         h4{
@@ -97,7 +99,11 @@
             h2{
                 font-size: 1.4em;
                 position: relative;
-                top: 2rem;
+                top: 1.2rem;
+                min-height: 48px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 left: 1.2rem;
                 width: 90%;
             }
@@ -125,31 +131,28 @@
         margin: .7rem;
         min-width: 400px ;
     }
-    h2{
-        top: 1.5rem;
-    }
     p{
         top: .6rem;
     }
 
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .mainContent{
-        height: 150vh;
-    }
-    .reasons{
-        justify-content: center !important;
-        // align-items: center !important;
+        min-height: 200vh;
+        .reasons{
+            top: 12vh;
+        }
     }
     .boxHeader{
         display: flex;
-        justify-content: center !important;
-        align-items: flex-start ;
+        justify-content: flex-start;
+        align-items: center ;
 
         h2{
             margin-left: .7rem;
+            width: calc(90% - 4rem) !important;
             display: flex;
-            justify-content: left;
+            justify-content: flex-start !important;
             align-items: center;
             font-size: 1.25em !important;
         }

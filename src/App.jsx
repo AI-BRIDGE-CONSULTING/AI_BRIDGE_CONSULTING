@@ -13,9 +13,11 @@ import {
   Navigate,
 } from "react-router-dom";
 import { SendProvider } from "./context/Context.jsx";
+import useIsMobile from "./functions/useIsMobile.jsx";
 
 function App() {
-  
+  const isMobile = useIsMobile()
+console.log(`is mobile: ${isMobile}`)
   return (
     <>
       <SendProvider>
@@ -28,7 +30,7 @@ function App() {
               }
             />
             <Route path="/" element={<Navigate to="/Home" replace />} />
-            <Route path="/Home" element={<Home />} />
+            <Route path="/Home" element={<Home isMobile={isMobile ? true : false }/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
