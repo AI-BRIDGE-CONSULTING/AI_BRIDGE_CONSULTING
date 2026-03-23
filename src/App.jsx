@@ -17,7 +17,7 @@ import useIsMobile from "./functions/useIsMobile.jsx";
 
 function App() {
   const isMobile = useIsMobile()
-console.log(`is mobile: ${isMobile}`)
+// console.log(`is mobile: ${isMobile}`)
   return (
     <>
       <SendProvider>

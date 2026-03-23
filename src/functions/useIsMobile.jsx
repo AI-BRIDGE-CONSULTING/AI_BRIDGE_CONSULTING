@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 export default function useIsMobile(){
-    const mobileMaxPx = 500
+    const mobileMaxPx = 550
 
     const [deviceWidth, SetDeviceWidth] = useState(() => window.innerWidth)
      useEffect(() => {

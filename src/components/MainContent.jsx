@@ -1,6 +1,21 @@
 import styles from "../component_styles/mainContent.module.scss";
+import { useEffect, useRef, useState } from "react";
+export default function MainContent({ isMobile }) {
+  const reasonBoxRef = useRef(null);
+  const reasonsRef = useRef(null)
 
-export default function MainContent() {
+  useEffect(() => {
+    if (isMobile) {
+      if (window.innerWidth) {
+        const reasonBoxInfo = reasonBoxRef.current.getBoundingClientRect();
+        const reasonBoxWidth = reasonBoxInfo.width;
+        const reasonsInfo = reasonsRef.current.getBoundingClientRect();
+        const reasonsWidth = reasonsInfo.width
+        console.log(`reasonsInfo ${reasonsWidth}`)
+      }
+      console.log(`zmieniono`);
+    }
+  }, [isMobile]);
   return (
     <>
       <div className={styles.mainContent}>
@@ -11,8 +26,8 @@ export default function MainContent() {
             których powinieneś zacząć go używać
           </h4>
         </div>
-        <div className={styles.reasons}>
-          <div className={styles.reasonBox}>
+        <div className={styles.reasons} ref={reasonsRef}>
+          <div className={styles.reasonBox} ref={reasonBoxRef}>
             <div className={styles.boxHeader}>
               <div className={`${styles.imgContainer} ${styles.time}`}>
                 <img src="/icons/time.svg" alt="time" />

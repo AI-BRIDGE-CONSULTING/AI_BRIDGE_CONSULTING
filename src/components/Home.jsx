@@ -92,7 +92,7 @@ export default function Home({isSended, isMobile}) {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <MainContent />
+            <MainContent isMobile={isMobile}/>
           </motion.div>
         </div>
         <div className={`${styles.section} section`} id="section3">
@@ -101,6 +101,11 @@ export default function Home({isSended, isMobile}) {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true, amount: 0.4 }}
+            style={
+              {display: "flex",
+              justifyContent: 'center',
+              alignItems: "center"}
+            }
           >
             <Form isSended={isSended}/>
           </motion.div>
