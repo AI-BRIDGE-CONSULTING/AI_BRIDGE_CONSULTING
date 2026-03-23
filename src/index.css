@@ -40,7 +40,7 @@ a:hover {
 body {
 width: 100vw;
 height: 300vh;
-/* overflow-x: hidden; */
+overflow-x: hidden;
   background-color: #0F1721;
 
 }
