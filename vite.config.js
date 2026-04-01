@@ -5,11 +5,16 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
+      // '/contact': {
+      //   target: 'https://api.aibridgeconsulting.pl', 
+      //   changeOrigin: true,
+      //   secure: true,
+      // },
       '/contact': {
-        target: 'https://api.aibridgeconsulting.pl', 
+        target: 'http://localhost:3000',
         changeOrigin: true,
-        secure: true,
-      },
+        secure: false,
+      }
     },
   },
 });
