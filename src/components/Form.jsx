@@ -257,7 +257,7 @@ function LimitReached(){
       //   },
       //   body: JSON.stringify({ email, service_type, otherInfo }),
       // });
-      console.log(service_type)
+      console.log(`service_type: ${service_type}`)
       const response = await fetch("http://localhost:5173/contact", {
         method: "POST",
         headers: {
