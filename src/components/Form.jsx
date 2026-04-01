@@ -248,7 +248,8 @@ function LimitReached(){
       errorRef.current.textContent = "Wybierz rodzaj usługi"
       return;
     }
-    if(otherInfo === "") otherInfo = "brak"
+    if(otherInfo === "") otherInfo = "brak";
+    console.log(`service_type: ${service_type}`)
     try {
       // const response = await fetch("https://api.aibridgeconsulting.pl/contact", {
       //   method: "POST",
@@ -257,7 +258,7 @@ function LimitReached(){
       //   },
       //   body: JSON.stringify({ email, service_type, otherInfo }),
       // });
-      console.log(`service_type: ${service_type}`)
+      
       const response = await fetch("http://localhost:5173/contact", {
         method: "POST",
         headers: {
