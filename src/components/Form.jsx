@@ -251,21 +251,21 @@ function LimitReached(){
     if(otherInfo === "") otherInfo = "brak";
     console.log(`service_type: ${service_type}`)
     try {
-      // const response = await fetch("https://api.aibridgeconsulting.pl/contact", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({ email, service_type, otherInfo }),
-      // });
-      
-      const response = await fetch("http://localhost:5173/contact", {
+      const response = await fetch("https://api.aibridgeconsulting.pl/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ email, service_type, otherInfo }),
       });
+      
+      // const response = await fetch("http://localhost:5173/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({ email, service_type, otherInfo }),
+      // });
 
       const data = await response.json();
       console.log(data);
