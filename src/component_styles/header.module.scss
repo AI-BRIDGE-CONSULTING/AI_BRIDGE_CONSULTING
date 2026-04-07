@@ -12,6 +12,7 @@
         color: #6e6e6e;
         text-align: center;
         font-size: 1.5rem;
+        margin-inline: 1rem;
     }
 }
 @font-face {
@@ -51,15 +52,19 @@
 @media screen and (max-width: 800px) {
     .headerText{
         font-size: 52px;
-    }
-    h2{
+
+        h2{
         text-align: center;
     }
-    h4{
+    }
+
+    .header {
+        h4{
         color: #6e6e6e;
-        text-align: center;
+        // text-align: center;
         font-size: 1rem;
     }
+}
 }
 @media screen and (max-width: 450px) {
     .header{

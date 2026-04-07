@@ -18,6 +18,10 @@
     background-color: #1F252C;
     width: 80vw;
     min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
     height: fit-content;
     max-width: 600px;
     top: 45%;
@@ -25,18 +29,23 @@
     transform: translate(-50%, -50%);
     border-radius: .7rem;
 
+    h2, h5, form {
+        top: 1.5rem;
+    }
     h2 {
         position: relative;
-        top: 1.5rem;
+        // top: 1.5rem;
         font-size: 1.7em;
         left: 2.5rem;
-        width: calc(100% - 2.5rem);
+        width: calc(100% - (2.5rem * 2));
     }
 
     h5 {
         position: relative;
-        top: 2rem;
-        left: 2.5rem;
+        top: 1.8rem;
+        left: 2.8rem;
+        width: calc(100% - (2.8rem * 2));
+        // margin-inline: 2.8em;
         color: #797C80;
     }
 
@@ -44,7 +53,7 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
-        top: 3rem;
+        top:2.8rem;
         left: 2.5rem;
         width: calc(100% - 5rem);
 
@@ -133,4 +142,34 @@
     font-family: Helvetica;
     font-style: italic;
     color: red;
+}
+@media screen and (max-width: 1000px) {
+    .headerForm {
+        font-size: x-large !important;
+        top: 3rem !important;
+    }
+    .formContainer{
+        // This line sets the min-height CSS property to the boolean result of the Sass mixin-exists() function,
+        // which checks if a mixin with the specified name exists (here, $name is empty, so it likely evaluates to false).
+        // The !important declaration ensures this rule takes precedence. Note: This appears to be invalid or placeholder code,
+        // as assigning a boolean to min-height doesn't make sense in CSS/SCSS; it may cause compilation errors or unexpected behavior.
+        min-height: calc(28rem) !important;
+        h2{
+            font-size: larger;
+        }
+        h5{
+            font-size: x-small;
+        }
+        label{
+            font-size: small;
+        }
+        form input, form textarea, form select{
+            height: min-content;
+            padding: .4rem;
+            font-size: .6rem;
+        }
+    }
+    .error{
+        font-size: x-small;
+    }
 }

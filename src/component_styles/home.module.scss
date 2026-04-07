@@ -20,8 +20,21 @@
 .buttonBook{
     position: relative;
     top: .8rem;
-    scale: 1.5;
+    // scale: 1.5;
+    font-size: 150%;
     outline: none;
+    border: 2px solid transparent;
+    color: #fff;
+
+}
+.buttonBook:hover{
+    border: 2px solid #833fcf;
+}
+.buttonBook:active{
+    outline: 2px solid #833fcf;
+}
+.buttonBook:focus{
+    outline: 2px solid #833fcf;
 }
 // .buttonBook:focus{
 //      outline: none;

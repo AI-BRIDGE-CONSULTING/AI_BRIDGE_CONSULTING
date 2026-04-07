@@ -258,7 +258,6 @@ function LimitReached(){
         },
         body: JSON.stringify({ email, service_type, otherInfo }),
       });
-      
       // const response = await fetch("http://localhost:5173/contact", {
       //   method: "POST",
       //   headers: {
