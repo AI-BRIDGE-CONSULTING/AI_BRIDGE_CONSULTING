@@ -59,6 +59,7 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
+  color: #fff;
   transition: border-color 0.25s;
 }
 button:hover {
@@ -75,7 +76,7 @@ button:focus-visible {
     color: #747bff;
   }
 
-}
+}*/
 @media screen and (max-width: 1800px) {
     body{
         height: 325vh;
@@ -85,4 +86,4 @@ button:focus-visible {
     body{
         height: 455vh;
     }
-} */
+} 
