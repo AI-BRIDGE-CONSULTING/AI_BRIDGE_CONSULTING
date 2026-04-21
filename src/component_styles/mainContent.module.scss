@@ -138,7 +138,15 @@
     p{
         top: .6rem;
     }
-
+    .reasonBox{
+        height: 450px;
+        h2{
+            margin-bottom: .7rem;
+        }
+        p{
+            top: .5rem !important;
+        }
+    }
 }
 @media screen and (max-width: 1100px) {
     .mainContent{
@@ -146,6 +154,7 @@
         
         .reasons{
             top: 12vh;
+
         }
     }
     .boxHeader{
